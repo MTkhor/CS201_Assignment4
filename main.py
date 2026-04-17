@@ -22,7 +22,7 @@ filtered_data.to_json("filtered_walk.json")
 first_point = [df["x"][0], df["y"][0]]
 last_point = [df["x"][len(df) - 1], df["y"][len(df) - 1]]
 
-plt.figure(figsize=(8, 4))
+plt.figure(figsize=(12, 6))
 plt.plot(df["x"], df["y"], color='pink', marker='none', linestyle='-', label="random wak trajectory")
 plt.plot(first_point[0], first_point[1], color='red', marker='$\heartsuit$', linestyle='none', label="starting point")
 plt.plot(last_point[0], last_point[1], color='purple', marker='$\heartsuit$', linestyle='none', label="ending point")
